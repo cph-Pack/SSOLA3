@@ -9,6 +9,7 @@ This is part of a digital transformation project and  therefore all aspects of t
 
 ## Requirements
 In this section, we will outline the functional and non-functional requirements of the MyDRTV case, so we can choose a fitting software architecture for the solution.
+
 Furthermore, we will describe one key use case in detail and include a full use case diagram. 
 
 ### Functional requirements
@@ -40,10 +41,15 @@ Furthermore, we will describe one key use case in detail and include a full use 
 
 #### UC1: Search film by title
 **Description:** This use case describes the process in which a user searches for a specific film by its title.
+
 **Actors:** User, the system
+
 **Preconditions:** The user has created an account and is logged into the MyDRTV application. The user knows the title of the film they are searching for.
+
 **Trigger:** The user enters the film's title into the search bar and presses the search button.
+
 **Postcondition:** The search result is displayed.
+
 **Basic flow:** 
 - The user enters the film's title into the search bar and presses the search button.
 - The system securely searches its database for a film with the given title.
@@ -51,6 +57,7 @@ Furthermore, we will describe one key use case in detail and include a full use 
 - The system displays the found film which is clickable, so the user can go and watch it if wanted.
 
 **Alternative flows:** 
+
 *AF1*:
 - The database does not contain a film with such title
 - The system displays the message: *"We don't yet have* [film title]*. Maybe you would like:"* and displays the '*More programmes you may like*' recommendations instead. Each recommendation should be clickable, so the user can go and watch it if wanted.
