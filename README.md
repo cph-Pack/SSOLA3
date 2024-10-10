@@ -76,6 +76,15 @@ As MYDRTV is to be a global project solved with microservices, we felt it would 
 
 ![MyDRTV](https://github.com/user-attachments/assets/2f78f702-7f57-4d2a-9cee-1662cfa73c8e)
 
+### Technology Stack
+We have a frontend that consists of a React Native as it’s very flexible and it’s divided into components, Making it easier to also develop our app across different platforms. 
+
+Our Back-end will mostly consist of C# code, with possibilities of code being written across different languages due to our use of microservices. An example could be that we would use python for our user recommendation service.
+
+For our database we’ll use MongoDB as our NoSQL database, as it’s what we are most familiar with.
+
+Hosting of the servers will be cloud based, all done from Azure for easy management.
+
 ### Why Microservices?
 Microservices are a great way to split our system into many smaller parts that are all connected. While we know that our customer want a scalable system because it should be available world wide, we want to maximize our efforts and distribute work. Our customer has made it clear that they are considering outsourcing due to the financial aspect of the project, which would be made more accessible with microservices.
 Using microservices also means that we do not need to worry about our whole system being coded in one language. By using these services, we can make sure that each part of our system will be tailored to fit its needs, even reflected within the choice of language it’s coded in.
