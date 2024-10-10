@@ -76,7 +76,7 @@ As MYDRTV is to be a global project solved with microservices, we felt it would 
 
 ![MyDRTV](https://github.com/user-attachments/assets/2f78f702-7f57-4d2a-9cee-1662cfa73c8e)
 
-###Why microservices?
+### Why Microservices?
 Microservices are a great way to split our system into many smaller parts that are all connected. While we know that our customer want a scalable system because it should be available world wide, we want to maximize our efforts and distribute work. Our customer has made it clear that they are considering outsourcing due to the financial aspect of the project, which would be made more accessible with microservices.
 Using microservices also means that we do not need to worry about our whole system being coded in one language. By using these services, we can make sure that each part of our system will be tailored to fit its needs, even reflected within the choice of language it’s coded in.
 By dividing our system into smaller pieces, we can also make sure that we can isolate possible bugs or errors. This means that if there were to be an error with our search function, it might not affect our users ability to stream the movies or series they want to watch. Due to our system being so divided, it also benefits the security aspect of our system, a big factor for our system being based in the EU would be GDPR, which using these services would be much easier to secure data and comply with the security standards set by GDPR. The business also benefits from multiple services by allowing the business to analyze based on users feedback or data analysis, and which parts of the system needs to be adjusted.
