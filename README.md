@@ -85,27 +85,8 @@ For our database we’ll use MongoDB as our NoSQL database, as it’s what we ar
 
 Hosting of the servers will be cloud based, all done from Azure for easy management.
 
-### Why Microservices?
-Microservices are a great way to split our system into many smaller parts that are all connected. While we know that our customer want a scalable system because it should be available world wide, we want to maximize our efforts and distribute work. Our customer has made it clear that they are considering outsourcing due to the financial aspect of the project, which would be made more accessible with microservices.
-Using microservices also means that we do not need to worry about our whole system being coded in one language. By using these services, we can make sure that each part of our system will be tailored to fit its needs, even reflected within the choice of language it’s coded in.
-By dividing our system into smaller pieces, we can also make sure that we can isolate possible bugs or errors. This means that if there were to be an error with our search function, it might not affect our users ability to stream the movies or series they want to watch. Due to our system being so divided, it also benefits the security aspect of our system, a big factor for our system being based in the EU would be GDPR, which using these services would be much easier to secure data and comply with the security standards set by GDPR. The business also benefits from multiple services by allowing the business to analyze based on users feedback or data analysis, and which parts of the system needs to be adjusted.
-
-With microservices, we enable our system to be more open to changes or implementations in the future. If we need a new feature for our video player, like streaming in 4K, if there were to be a premium feature down the line, the new developers working on the system will find it easier to access what they need without much confusion.
-
-Even though microservices are expensive, they allow us to pay for what we use on our cloud based services. This means that we would only need to pay for the cloud based services that are used on our services, essentially making sure that we maximize what we are paying for.
-
-
 ### Microservices vs Monolithic
 #### Advantages and disadvantages of Monolithic architecture
-Having only one code base and one directory makes development and deployment easier. Likewise, in a centralized code base and repository, one API can perform the same funktion as multiple microservices
-Since monolithic architecture uses a single, centralized unit, testing and debugging is faster and easier to follow.
-
-This, however, comes at the cost of slower development speed and increased complexity. Individual components can not be scaled and if any module has an error, ic could potentially affect the entire application. Any changes to the framework or language will affect the entire application, making changes often more expensive and time consuming, requiring the entire monolith to be redeployed. Monolithic architecture also constrains which technologies can be used.
-
-#### Advantages and disadvantages of microservices
-Microservices allow teams to work agile with frequent deployments. It allows flexible scaling and continuous deployment. Microservices allow teams to select the tools the need and allow for deployment of changes without risking the entire application.
-
-This does, however, add more complexity than monolithic architecture, as more services are created by more teams. This also requires better communication between teams and collaboration to coordinate updates. Each service may also require it's own infrastructure as well as testing suites and logs. This can make debugging more difficult and increase costs. Also, it can lead to a variety of languages, logging standards and monitoring leading to a lack of standardization.
-
-
+Microservices are a great way to allow teams to work agile with frequent deployments. It allows flexible scaling and continuous deployment. Microservices allow teams to select the tools the need and allow for deployment of changes without risking errors tied to the entire application.
+This does, however, add more complexity than monolithic architecture, as more services are created by more teams. This also requires better communication between teams and collaboration to coordinate updates. Each service may also require it's own infrastructure as well as testing suites and logs, this is where microservices are great, because even though it takes more time to add tests, logs, etc on each separate service, each service can also be tailored to fit its needs. These extra steps can make debugging more difficult and increase costs. Also, it can lead to a variety of languages, logging standards and monitoring leading to a lack of standardization. It does however ensure us that we can isolate our services, which is great for security standards, especially if we take into consideration that we might want a service for user information and payments. Using different services also allows the business owning the system to analyze what parts need optimization or new features based on user feedback.
 Based on these points, we chose to use microservices as this would allow us to use outsourcing to reduce costs, implement multiple languages such as python for machine learning, and allow us to better implement future features without compromising the integrity of the application or requiring a complete redeployment.
