@@ -87,6 +87,12 @@ Hosting of the servers will be cloud based, all done from Azure for easy managem
 
 ### Microservices vs Monolithic
 #### Advantages and disadvantages of Monolithic architecture
+Having only one code base and one directory makes development and deployment easier. Likewise, in a centralized code base and repository, one API can perform the same funktion as multiple microservices
+Since monolithic architecture uses a single, centralized unit, testing and debugging is faster and easier to follow.
+
+This, however, comes at the cost of slower development speed and increased complexity. Individual components can not be scaled and if any module has an error, ic could potentially affect the entire application. Any changes to the framework or language will affect the entire application, making changes often more expensive and time consuming, requiring the entire monolith to be redeployed. Monolithic architecture also constrains which technologies can be used.
+
+#### Advantages and disadvantages of microservices
 Microservices are a great way to allow teams to work agile with frequent deployments. It allows flexible scaling and continuous deployment. The services allow teams to select the tools the need and allow for deployment of changes without risking errors tied to the entire application.
 This does, however, add more complexity than monolithic architecture, as more services are created by more teams.
 
