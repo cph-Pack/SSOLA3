@@ -69,5 +69,11 @@ Furthermore, we will describe one key use case in detail and include a full use 
 #### Use case diagram
 ![image](https://github.com/user-attachments/assets/022bd7c0-432a-4abe-93ba-0fb3f13673e0)
 
+#### Bounded context diagram
+
+As MYDRTV is to be a global project solved with microservices, we felt it would be very valueable to make a bounded context diagram. Splitting up the domain into different subdomains is a necessity for a microservice approach. We added most the actions from the use case diagram to the bounded context to draw clear lines on which sub domain the action is taken and where it should be sent to.
+
+
+![MyDRTV](https://github.com/user-attachments/assets/2f78f702-7f57-4d2a-9cee-1662cfa73c8e)
 
 
