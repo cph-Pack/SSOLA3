@@ -76,6 +76,16 @@ As MYDRTV is to be a global project solved with microservices, we felt it would 
 
 ![MyDRTV](https://github.com/user-attachments/assets/2f78f702-7f57-4d2a-9cee-1662cfa73c8e)
 
+###Why microservices?
+Microservices are a great way to split our system into many smaller parts that are all connected. While we know that our customer want a scalable system because it should be available world wide, we want to maximize our efforts and distribute work. Our customer has made it clear that they are considering outsourcing due to the financial aspect of the project, which would be made more accessible with microservices.
+Using microservices also means that we do not need to worry about our whole system being coded in one language. By using these services, we can make sure that each part of our system will be tailored to fit its needs, even reflected within the choice of language it’s coded in.
+By dividing our system into smaller pieces, we can also make sure that we can isolate possible bugs or errors. This means that if there were to be an error with our search function, it might not affect our users ability to stream the movies or series they want to watch. Due to our system being so divided, it also benefits the security aspect of our system, a big factor for our system being based in the EU would be GDPR, which using these services would be much easier to secure data and comply with the security standards set by GDPR. The business also benefits from multiple services by allowing the business to analyze based on users feedback or data analysis, and which parts of the system needs to be adjusted.
+
+With microservices, we enable our system to be more open to changes or implementations in the future. If we need a new feature for our video player, like streaming in 4K, if there were to be a premium feature down the line, the new developers working on the system will find it easier to access what they need without much confusion.
+
+Even though microservices are expensive, they allow us to pay for what we use on our cloud based services. This means that we would only need to pay for the cloud based services that are used on our services, essentially making sure that we maximize what we are paying for.
+
+
 ### Microservices vs Monolithic
 #### Advantages and disadvantages of Monolithic architecture
 Having only one code base and one directory makes development and deployment easier. Likewise, in a centralized code base and repository, one API can perform the same funktion as multiple microservices
